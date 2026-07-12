@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ydidia Event Organization</title>
+    <link rel="stylesheet" href="styly.css">
+</head>
+    <body>
+    <header>
+    <div class="logo">Ydidia Event Organization</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#allevents">All Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+    <section class="hero">
+        <h1>Ydidia Event Organization</h1>
+        <p>all events are coming soon</p> 
+<button onclick="document.getElementById('about').scrollIntoView()">
+Learn More
+</button>
+
+</div>
+
+</section>
+<section id="about">
+
+<h2 class="title">About Event</h2>
+
+<p style="text-align:center;font-size:px;max-width:900px;margin:auto;">
+Join thousands of professionals, entrepreneurs, developers, <br> 
+designers, and innovators at Ydidia Event Organization.Learn <br>
+from industry leaders, discover new technologies, and build <br> 
+valuable connections.
+</p>
+
+</section>
+
+<section id="allevents">
+
+<h2 class="title">All Events</h2>
+
+<ul class="All Events">
+  
+  <div class="cards">
+
+<div class="card">
+
+        <li>New Year Event
+<a href="newyearevent.html"><button>View Event</button></a></li>
+</div>
+
+<div class="card">
+
+        <li>Christmas Event
+<a href="christmasevent.html"><button>View Event</button></a></li>
+</div>
+
+<div class="card">
+
+        <li>Eastern Event
+<a href="easternevent.html"><button>View Event</button></a></li><div class="countdown">
+</div>
+
+</div>
+
+</ul>
+
+</section>
+
+<footer>
+
+<section id="contact">
+<h3>Contact</h3>
+<p>+251907589127</p>
+<p>+251976764342</p>
+<p>7090</p>
+<p>Email: ydidiaevent7@gmail.com</p>
+<p>Telegram: @ydidia_event</p>
+<p>Tik Tok: @ydidia_event21</p>
+<p>Instagram: @ydidia_event27</p>
+<p>Facebook: @ydidia_event17
+
+</section>
+<h4>Ydidia Event Organization</h4>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+const target=new Date("September 07, 2026 09:00:00").getTime();
+
+setInterval(()=>{
+
+const now=new Date().getTime();
+
+const gap=target-now;
+
+const day=1000*60*60*24;
+const hour=1000*60*60;
+const minute=1000*60;
+
+document.getElementById("days").innerHTML=Math.floor(gap/day);
+
+document.getElementById("hours").innerHTML=Math.floor((gap%day)/hour);
+
+document.getElementById("minutes").innerHTML=Math.floor((gap%hour)/minute);
+
+document.getElementById("seconds").innerHTML=Math.floor((gap%minute)/1000);
+
+},1000);
+
+</script>
+
+</body>
+</html>
